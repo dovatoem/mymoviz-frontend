@@ -47,7 +47,7 @@ function Home() {
 
   // Ajout hook d'effet API TMDB qui va alimenter le tableau moviesData
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-backend-one-pied.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
           setMoviesData(data.movies)
